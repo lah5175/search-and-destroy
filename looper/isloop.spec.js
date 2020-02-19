@@ -25,7 +25,7 @@ test3.addToHead('📺');
 emojis.forEach(el => test3.addToTail(el))
 
 describe('isLoop function', () => {
-	
+
 	// Feel free to write a few tests of your own! :)
 	it('returns true if linked list contains a loop', () =>{
 		expect(isLoop(test1)).to.equal(true);
@@ -35,4 +35,8 @@ describe('isLoop function', () => {
 	it('returns false if linked list contains no loop', () =>{
 		expect(isLoop(test3)).to.equal(false);
 	});
+
+	xit('returns the node where the loop starts', ()=>{
+		expect(isLoop(test1)).to.equal(test1.getNthNode(6))
+	})
 });
