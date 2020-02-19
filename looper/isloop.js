@@ -7,7 +7,7 @@ const isLoop = (linkedlist) => {
 
   while(current) {
     if (nodeArray.includes(current)){
-      return true;
+      return current;
     }
 
     nodeArray.push(current);
